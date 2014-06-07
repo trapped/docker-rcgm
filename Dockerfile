@@ -5,11 +5,11 @@ ENV HOME /root
 
 # gcc, ruby, git
 RUN apt-get update
-RUN apt-get install -y ruby build-essentials git-core wget
+RUN apt-get install -y ruby build-essential git-core wget rubygems
 
 # mstrpc
-RUN wget https://pellero.it/libmstrpc.so -o /usr/lib/libmstrpc.so
-RUN wget https://pellero.it/mstrpc.h -o /usr/lib/mstrpc.h
+RUN wget http://pellero.it/libmstrpc.so -o /usr/lib/libmstrpc.so
+RUN wget http://pellero.it/mstrpc.h -o /usr/lib/mstrpc.h
 
 # rake
 RUN gem install rake
