@@ -9,7 +9,7 @@ RUN apt-get install -y ruby build-essential git-core wget rubygems
 
 # mstrpc
 RUN wget http://pellero.it/libmstrpc.so -o /usr/lib/libmstrpc.so
-RUN wget http://pellero.it/mstrpc.h -o /usr/lib/mstrpc.h
+RUN wget http://pellero.it/mstrpc.h -o /usr/include/mstrpc.h
 
 # rake
 RUN gem install rake
